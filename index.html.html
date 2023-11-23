@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#"><img src="C:\Users\Hanika Khatwani\Downloads\mojitologo.png"  class="logo"></a>
+            <ul>
+                <li><a href="#" > Home </a></li>
+                <li><a href="#" > Menu </a></li>
+                <li><a href="#" > What's New </a></li>
+                <li><a href="#" > Contact </a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textbox">
+                <h2>Not Just a Mojito<br>It's a <span>Lifestyle Unleashed</span></h2>
+                <h3>Classic Mojito</h3>
+                <p> "Timeless Refreshment, Muddled to Perfection."</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src= "C:\Users\Hanika Khatwani\Downloads\image-removebg-preview (30).png" class="mojito">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="C:\Users\Hanika Khatwani\Downloads\image-removebg-preview (31).png" onclick="imgSlider('C:\Users\Hanika Khatwani\Downloads\image-removebg-preview (31).png');changeCircleColor('#F6947D')"></li>
+            <li><img src="C:\Users\Hanika Khatwani\Downloads\image-removebg-preview (32).png" onclick="imgSlider('C:\Users\Hanika Khatwani\Downloads\image-removebg-preview (32).png');changeCircleColor('#BFDA6E')"></li>
+            <li><img src="C:\Users\Hanika Khatwani\Downloads\image-removebg-preview (33).png" onclick="imgSlider('C:\Users\Hanika Khatwani\Downloads\image-removebg-preview (33).png');changeCircleColor('#FEDA6F')"></li>
+        </ul>
+    </section>
+
+    <script type="text/javascript">
+        function imgSlider(anything){
+            document.querySelector('.thumb').src = anything;
+        }
+        function changeCircleColor(color){
+            const circle= document.querySelector('.circle');
+            circle.style.background= color;
+        }
+    </script>
+</body>
+</html>
